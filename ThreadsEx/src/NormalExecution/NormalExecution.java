@@ -5,7 +5,7 @@ class Hello{
     public void printHello(){
 
         for (int i = 0; i < 4; i++) {
-            System.out.println("Hello From Hello Class: " + i);
+            System.out.println("Hello From Hello Thread: " + i);
             try {
                 Thread.sleep(1000); // Sleep for 1000 milliseconds/ 1sec
             } catch (InterruptedException e) {
@@ -25,7 +25,7 @@ class Hi{
     public void printHi(){
 
         for (int i = 0; i < 4; i++) {
-            System.out.println("Hello From Hi Class: " + i);
+            System.out.println("Hello From Hi Thread: " + i);
         }
 
         try {
@@ -52,7 +52,7 @@ public class NormalExecution {
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Hello From Main: " + i);
+            System.out.println("Hello From Main Thread: " + i);
 
             try {
                 Thread.sleep(1000); // Sleep for 1000 milliseconds/ 1sec
